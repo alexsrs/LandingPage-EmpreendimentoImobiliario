@@ -47,7 +47,7 @@ header{
 
 .cover-form{
 	width: 100%;
-	padding: 0 2%;	
+	padding: 0;	
 }
 
 .bg{
@@ -72,8 +72,8 @@ header{
 .form-container h2{
 	font-weight: normal;
 	padding: 20px 15px;
-	color: black;
-	font-size: 18px;
+	color: white;
+	font-size: 22px;
 	background-color: #61A49B;
 	text-align: center;
 }
@@ -108,7 +108,7 @@ header{
 }
 
 .form-container form input[type=submit]{
-	background-color: #033C50;
+	background-color: #23313F;
 	text-transform: uppercase;
 	color: white;
 	width: 100%;
@@ -128,7 +128,7 @@ section.chamada{
 }
 
 section.chamada .container{
-	padding: 50px 0;
+	padding: 60px 0 20px 0;
 	background-color: #834959;
 }
 
@@ -137,7 +137,7 @@ section.chamada h2{
 	max-width: 700px;
 	display: inline-block;
 	color: white;
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: normal;
 }
 
@@ -151,6 +151,17 @@ section.chamada p{
 	font-weight: normal;
 }
 
+.arrow{
+	position: relative;
+	top: 50px;
+	left: 50%;
+	margin-left: -32px;
+	width: 64px;
+	height: 64px;
+	background-image:url('../images/arrow.png');
+	background-size: 100% 100%;
+}
+
 @media screen and (max-width: 510px) {
 	header{
 		text-align: center;
@@ -160,5 +171,16 @@ section.chamada p{
 		margin-top: 10px;
 		display: inline-block;
 		float: none;
+	}
+
+		.bg{
+		text-align: center;
+	}
+
+	.form-container{
+		height: auto;
+		width: 96%;
+		max-width: 400px;
+		display: inline-block;
 	}
 }
