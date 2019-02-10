@@ -13,7 +13,7 @@ html, body{
 
 .container{
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: 0 auto;
 }
 
@@ -23,11 +23,12 @@ html, body{
 
 header{
 	background-color: #EFE29F;
-	padding: 20px 4% 40px 4%;
+	padding: 20px 4% 30px 4%;
 }
 
 .logo-1{
 	float: left;
+	margin-left: 10%;
 	background-image: url("../images/logo1.png");
 	height: 60px;
 	width: 160px;
@@ -38,6 +39,7 @@ header{
 
 .logo-2{
 	float: right;
+	margin-right: 10%;
 	background-image: url("../images/logo2.png");
 	height: 60px;
 	width: 140px;
@@ -185,7 +187,16 @@ section.mosaico{
 
 .mosaico-text{
 	width: 40%;
-	padding: 40px;
+	padding: 50px;
+	text-align: justify;
+}
+
+.mosaico-text p{
+	font-size: 18px;
+	color: grey;
+	font-family: 'Bad Script', cursive;
+	font-weight: normal;
+
 }
 
 footer{
@@ -207,6 +218,8 @@ footer.p{
 	}
 
 	.logo-1, .logo-2{
+		margin-left: 0px;
+		margin-right: 0px;
 		margin-top: 10px;
 		display: inline-block;
 		float: none;
@@ -239,6 +252,4 @@ footer.p{
 		width: 100%;
 		text-align: justify;
 	}
-
-
 }
