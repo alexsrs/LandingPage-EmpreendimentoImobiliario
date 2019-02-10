@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 html, body{
@@ -20,8 +21,8 @@ html, body{
 }
 
 header{
-	background-color: #D6D6D6;
-	padding: 20px 4% 30px 4%;
+	background-color: #EFE29F;
+	padding: 20px 4% 40px 4%;
 }
 
 .logo-1{
@@ -62,7 +63,9 @@ header{
 	margin-right: 40px;
 	height: 110%;
 	position: relative;
+	z-index: 2;
 	top: -5%;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 	background-color: white;
 }
 
@@ -71,7 +74,8 @@ header{
 	padding: 20px 15px;
 	color: black;
 	font-size: 18px;
-	background-color: rgb(234, 236, 239)
+	background-color: #61A49B;
+	text-align: center;
 }
 
 .form-container form{
@@ -95,8 +99,11 @@ header{
 .form-container form input[type=text]{
 	width: 100%;
 	border: 1px solid #ccc;
+	/*Melhor maneira de definir a altura dos campos de formulário*/
+	/* Compatível com a maioria dos navegadores */
 	height: 45px;
 	line-height: 45px;
+	/*  */
 	padding-left: 10px;
 }
 
@@ -109,6 +116,39 @@ header{
 	height: 40px;
 	cursor: pointer;
 	border: 0;
+}
+
+section.chamada{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	top: -50px;
+	display: inline-block;
+}
+
+section.chamada .container{
+	padding: 50px 0;
+	background-color: #834959;
+}
+
+section.chamada h2{
+	width: 96%;
+	max-width: 700px;
+	display: inline-block;
+	color: white;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+section.chamada p{
+	width: 96%;
+	padding-top: 7px;
+	max-width: 600px;
+	display: inline-block;
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 @media screen and (max-width: 510px) {
