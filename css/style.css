@@ -7,6 +7,7 @@
 
 html, body{
 	height: 100%;
+	background-color: #B1BEA3;
 }
 
 
@@ -74,7 +75,7 @@ header{
 	padding: 20px 15px;
 	color: white;
 	font-size: 22px;
-	background-color: #61A49B;
+	background-color: #834959;
 	text-align: center;
 }
 
@@ -128,8 +129,8 @@ section.chamada{
 }
 
 section.chamada .container{
-	padding: 60px 0 20px 0;
-	background-color: #834959;
+	padding: 60px 0 0 0;
+	background-color: #61A49B;
 }
 
 section.chamada h2{
@@ -153,7 +154,7 @@ section.chamada p{
 
 .arrow{
 	position: relative;
-	top: 50px;
+	top: 30px;
 	left: 50%;
 	margin-left: -32px;
 	width: 64px;
@@ -162,7 +163,45 @@ section.chamada p{
 	background-size: 100% 100%;
 }
 
-@media screen and (max-width: 510px) {
+section.mosaico{
+	position: relative;
+	top: -50px;
+	width: 100%;
+	height: auto;
+	
+}
+
+.flex-mosaico{
+	display: flex;
+	background-color: #EFE29F;
+}
+
+.mosaico-img{
+	background-position: center;
+	background-size: cover;
+	width: 60%;
+	height: 300px;
+}
+
+.mosaico-text{
+	width: 40%;
+	padding: 40px;
+}
+
+footer{
+	/*background-color: #61A49B;*/
+	position: relative;
+	top: -50px;
+	text-align: center;
+	padding: 30px 0;
+}
+footer.p{
+	margin-top: 8px;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 768px){
+
 	header{
 		text-align: center;
 	}
@@ -173,7 +212,7 @@ section.chamada p{
 		float: none;
 	}
 
-		.bg{
+	.bg{
 		text-align: center;
 	}
 
@@ -183,4 +222,23 @@ section.chamada p{
 		max-width: 400px;
 		display: inline-block;
 	}
+
+	.flex-mosaico{
+		display: inline-block;
+		width: 100%;
+	}
+
+	.mosaico-img{
+		width: 100%;
+		height: 300px;
+		order: 1;
+	}
+
+	.mosaico-text{
+		order: 2;
+		width: 100%;
+		text-align: justify;
+	}
+
+
 }
